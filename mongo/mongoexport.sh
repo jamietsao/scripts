@@ -1,0 +1,1 @@
+mongoexport --db gametime_production --collection listings --csv --query '{ event_id : ObjectId("54c6fd0d3bf376466e000141"), lots : 2 }', --fields source,section,section_compare,row_desc,relative_row,curPr,summary.bidPr,sort_factor --out 2015-04-19-dodgers-rockies-2-packs.csv
