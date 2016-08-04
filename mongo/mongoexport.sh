@@ -1,1 +1,3 @@
-mongoexport --db gametime_production --collection listings --csv --query '{ event_id : ObjectId("54c6fd0d3bf376466e000141"), lots : 2 }', --fields source,section,section_compare,row_desc,relative_row,curPr,summary.bidPr,sort_factor --out 2015-04-19-dodgers-rockies-2-packs.csv
+mongoexport --db gametime_production --collection listings --type=csv --query '{ event_id : ObjectId("54c6fd0d3bf376466e000141"), lots : 2 }' --fields source,section,section_compare,row_desc,relative_row,curPr,summary.bidPr,sort_factor --out 2015-04-19-dodgers-rockies-2-packs.csv
+
+mongoexport --db gametime_production --collection suppliers --type=csv --query '{}' --fields source,unt_rate_far,unt_rate_close --out 2016-07-08-supplier-unt-rates.csv
