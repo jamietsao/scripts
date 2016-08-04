@@ -1,0 +1,2 @@
+#! /bin/bash
+find . -type d -d 1 -exec echo {} \; -exec git --git-dir={}/.git --work-tree=$PWD/{} pull \;

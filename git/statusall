@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#
+# Runs 'git status' across all child repos
+#
+find . -type d -depth 1 -exec echo {} \; -exec git --git-dir={}/.git --work-tree=$PWD/{} status \;
